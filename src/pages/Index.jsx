@@ -1,6 +1,7 @@
-import { Container, Text, VStack, Heading, Box, List, ListItem, ListIcon } from "@chakra-ui/react";
+import { Container, Text, VStack, Heading, Box, List, ListItem, ListIcon, Image } from "@chakra-ui/react";
 import { FaCheckCircle } from "react-icons/fa";
 import forestBackground from '../images/forest-background.png';
+import ushiPhoto from '../images/ushi-photo.png';
 
 const Index = () => {
   return (
@@ -28,6 +29,7 @@ const Index = () => {
 
         <Box>
           <Heading as="h2" size="lg" mb={4}>【自己紹介】</Heading>
+          <Image src={ushiPhoto} alt="うっしー" borderRadius="full" boxSize="150px" objectFit="cover" mb={4} />
           <Text color="white">兵庫県神崎郡福崎町で生まれ神戸学院大学を卒業。</Text>
           <Text color="white">合同会社陽だまりを設立し、パン屋じゃぱんで活躍。</Text>
           <Text color="white">一時期は1000人規模のコミュニティをまとめ上げ求心力を発揮。</Text>
