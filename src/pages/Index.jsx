@@ -1,5 +1,5 @@
 import { Container, Text, VStack, Heading, Box, List, ListItem, ListIcon, Image } from "@chakra-ui/react";
-import { FaCheckCircle } from "react-icons/fa";
+import { FaCheckCircle, FaFacebook, FaLinkedin, FaTiktok } from "react-icons/fa";
 import forestBackground from '../images/forest-background.png';
 import ushiPhoto from '../images/ushi-photo.png';
 import correctPhoto from '../images/correct-photo.png';
@@ -59,9 +59,20 @@ const Index = () => {
 
         <Box>
           <Heading as="h2" size="lg" mb={4}>【頼りになるパートナー】</Heading>
-          <Text color="white">SNS広告：コラボレート南さん</Text>
-          <Text color="white">採用コンサル：山下さん</Text>
-          <Text color="white">TikTok：りゅうせいさん</Text>
+          <List spacing={3}>
+            <ListItem>
+              <ListIcon as={FaFacebook} color="blue.500" />
+              SNS広告：コラボレート南さん
+            </ListItem>
+            <ListItem>
+              <ListIcon as={FaLinkedin} color="blue.700" />
+              採用コンサル：山下さん
+            </ListItem>
+            <ListItem>
+              <ListIcon as={FaTiktok} color="black" />
+              TikTok：りゅうせいさん
+            </ListItem>
+          </List>
         </Box>
 
         <Box>
