@@ -1,6 +1,6 @@
 import { Container, Text, VStack, Heading, Box, List, ListItem, ListIcon } from "@chakra-ui/react";
 import { FaCheckCircle } from "react-icons/fa";
-import forestBackground from '../public/images/forest-background.png';
+import forestBackground from '../images/forest-background.png';
 
 const Index = () => {
   return (
@@ -14,7 +14,16 @@ const Index = () => {
       minHeight="100vh"
       color="white"
     >
-      <VStack spacing={8} align="start">
+      <Box
+        position="absolute"
+        top="0"
+        left="0"
+        right="0"
+        bottom="0"
+        bg="rgba(0, 0, 0, 0.5)"
+        zIndex="0"
+      />
+      <VStack spacing={8} align="start" zIndex="1">
         <Heading as="h1" size="xl">うっしーについて</Heading>
 
         <Box>
