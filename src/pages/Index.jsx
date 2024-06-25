@@ -1,6 +1,6 @@
 import { Container, Text, VStack, Heading, Box, List, ListItem, ListIcon } from "@chakra-ui/react";
 import { FaCheckCircle } from "react-icons/fa";
-import forestBackground from '../images/forest-background.jpg';
+import forestBackground from '../images/forest-background.png';
 
 const Index = () => {
   return (
@@ -9,10 +9,10 @@ const Index = () => {
       maxW="container.md" 
       py={10} 
       backgroundImage={`url(${forestBackground})`}
-    backgroundSize="cover"
-    backgroundPosition="center"
-    minHeight="100vh"
-    color="white"
+      backgroundSize="cover"
+      backgroundPosition="center"
+      minHeight="100vh"
+      color="white"
     >
       <Box
         position="absolute"
